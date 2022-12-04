@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import AdventWindow from "./components/AdventWindow";
+import Calendar from "./components/Calendar/Calendar";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const data: Calendar = {
+    year: 2022,
+    windows: [
+      {
+        title: "Pomodoro Timer",
+        day: "1",
+        imageUrl:
+          "https://play-lh.googleusercontent.com/c8WFDV5n4Z_79ZqksOLUVOdMo_QxQNKCK22yoXdw-Dc03Nn0VltXNJfC1QpeBXvbBxNL",
+      },
+      {
+        title: "Grapefruit & Dragonfruit",
+        day: "2",
+        imageUrl:
+          "https://play-lh.googleusercontent.com/c8WFDV5n4Z_79ZqksOLUVOdMo_QxQNKCK22yoXdw-Dc03Nn0VltXNJfC1QpeBXvbBxNL",
+      },
+    ],
+  };
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Calendar year={data.year} windows={data.windows} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
