@@ -1,0 +1,9 @@
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+.calendar {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  gap: 5rem;
+}

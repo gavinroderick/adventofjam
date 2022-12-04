@@ -1,31 +1,49 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
-import AdventWindow from "./components/AdventWindow";
 import Calendar from "./components/Calendar/Calendar";
+import image1 from "./assets/img/jam/01.jpg";
+import image2 from "./assets/img/jam/02.jpg";
+import image3 from "./assets/img/jam/03.jpg";
+import image4 from "./assets/img/jam/04.jpg";
 
 function App() {
-  const data: Calendar = {
+  const jamData: Calendar = {
+    title: "Advent of Jam",
     year: 2022,
     windows: [
+      { day: "1", title: "Strawberry", imageUrl: image1, rating: 10 },
       {
-        title: "Pomodoro Timer",
-        day: "1",
-        imageUrl:
-          "https://play-lh.googleusercontent.com/c8WFDV5n4Z_79ZqksOLUVOdMo_QxQNKCK22yoXdw-Dc03Nn0VltXNJfC1QpeBXvbBxNL",
-      },
-      {
-        title: "Grapefruit & Dragonfruit",
         day: "2",
-        imageUrl:
-          "https://play-lh.googleusercontent.com/c8WFDV5n4Z_79ZqksOLUVOdMo_QxQNKCK22yoXdw-Dc03Nn0VltXNJfC1QpeBXvbBxNL",
+        title: "Grapefruit & Dragonfruit",
+        imageUrl: image2,
+        rating: 8,
       },
+      {
+        day: "3",
+        title: "Mirabelle Plum & Linden Jam",
+        imageUrl: image3,
+        rating: 6.5,
+      },
+      { day: "4", title: "Apricot & Bergamot", imageUrl: image4, rating: 2 },
     ],
   };
-
   return (
     <div className="App">
-      <Calendar year={data.year} windows={data.windows} />
+      {/* <Calendar
+        title="Advent of CSS"
+        year={cssData.year}
+        windows={cssData.windows}
+      /> */}
+      <Calendar
+        title={jamData.title}
+        year={jamData.year}
+        windows={jamData.windows}
+      />
+      <footer>
+        <p>
+          made with ❤️ by <a>gav</a>
+        </p>
+        <p>📸 & taste tested by val</p>
+      </footer>
     </div>
   );
 }
