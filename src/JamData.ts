@@ -2,6 +2,7 @@ import image1 from "../src/assets/img/jam/01.jpg";
 import image2 from "../src/assets/img/jam/02.jpg";
 import image3 from "../src/assets/img/jam/03.jpg";
 import image4 from "../src/assets/img/jam/04.jpg";
+import image5 from "../src/assets/img/jam/05.jpg";
 
 import AdventWindow from "./components/AdventWindow/AdventWindow";
 const JamData: AdventWindow[] = [
@@ -28,6 +29,12 @@ const JamData: AdventWindow[] = [
     title: "Apricot & Bergamot",
     imageUrl: image4,
     rating: 2,
+  },
+  {
+    day: "5",
+    title: "Orange & Chestnut with Winter Spices",
+    imageUrl: image5,
+    rating: 0,
   },
 ];
 
