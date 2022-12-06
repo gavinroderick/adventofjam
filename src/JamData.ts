@@ -3,6 +3,7 @@ import image2 from "../src/assets/img/jam/02.jpg";
 import image3 from "../src/assets/img/jam/03.jpg";
 import image4 from "../src/assets/img/jam/04.jpg";
 import image5 from "../src/assets/img/jam/05.jpg";
+import image6 from "../src/assets/img/jam/06.jpg";
 
 import AdventWindow from "./components/AdventWindow/AdventWindow";
 const JamData: AdventWindow[] = [
@@ -35,6 +36,12 @@ const JamData: AdventWindow[] = [
     title: "Orange & Chestnut with Winter Spices",
     imageUrl: image5,
     rating: 0,
+  },
+  {
+    day: "6",
+    title: "Cherry & Christmas Spices",
+    imageUrl: image6,
+    rating: 5,
   },
 ];
 
