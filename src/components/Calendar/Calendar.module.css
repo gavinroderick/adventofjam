@@ -1,6 +1,28 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 h1 {
   font-weight: bold;
-  text-align: center;
+}
+
+.sortRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sortRow > button {
+  background-color: #fff;
+  color: red;
+  text-transform: lowercase;
+  font-family: inherit;
+  font-weight: bolder;
+  height: 2rem;
+  border: 0;
+  border-radius: 25%;
 }
 .calendar {
   margin-left: 2rem;
